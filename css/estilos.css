@@ -73,7 +73,18 @@ header, footer{
     width: 100%;
     display: flex;
     justify-content: center;
+    background-image: url(../images/perroygato2.jpg);
+    background-size: cover;
+    background-position: center;
+    
 }
+.image-header img{
+    transition: opacity 1.5s ease-in-out;
+}
+.image-header img:hover{
+    opacity: 0;
+}
+
 /*fin de header*/ 
 /*le asigno area de grid al contenido medio*/
 .grid-contenido{
@@ -156,7 +167,9 @@ header, footer{
 .imagen-productos{
     width: 300px;
     height: 400px;
+    transition: all 1s;
 }
+
 .formulario{
     display: flex;
     width: 45%;
@@ -170,6 +183,103 @@ header, footer{
 .mapa{
     width: 100%;
 }
+/*animaciones*/
+.animacion1{
+    animation: anim1 1s linear 0s 1 normal forwards;
+}
+
+@keyframes anim1 {
+    0% {
+      transform: scaleY(0.4);
+    }
+  
+    100% {
+      transform: scaleY(1);
+    }
+  }
+.animacion2{
+    animation: anim2 2s linear 0s 1 normal forwards;
+}
+@keyframes anim2 {
+    0% {
+      animation-timing-function: ease-in;
+      opacity: 1;
+      transform: translateY(-45px);
+    }
+  
+    24% {
+      opacity: 1;
+    }
+  
+    40% {
+      animation-timing-function: ease-in;
+      transform: translateY(-24px);
+    }
+  
+    65% {
+      animation-timing-function: ease-in;
+      transform: translateY(-12px);
+    }
+  
+    82% {
+      animation-timing-function: ease-in;
+      transform: translateY(-6px);
+    }
+  
+    93% {
+      animation-timing-function: ease-in;
+      transform: translateY(-4px);
+    }
+  
+    25%,
+    55%,
+    75%,
+    87% {
+      animation-timing-function: ease-out;
+      transform: translateY(0px);
+    }
+  
+    100% {
+      animation-timing-function: ease-out;
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+.animacion-productos:hover{
+    transform: scale(1.1);
+}
+.animacion3{
+    animation: anim3 2s ease 0s 1 normal forwards;
+}
+@keyframes anim3 {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    30% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+  
+    40% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+  
+    50% {
+      transform: scale3d(0.85, 1.15, 1);
+    }
+  
+    65% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+  
+    75% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+  
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+  }
 /*le asigno a footer su area en grid*/
 .container-footer{
     grid-area: footer;
@@ -196,6 +306,9 @@ header, footer{
 }
 .images {
     width: 100%;
+}
+.images:hover{
+    transform: scale(1.1);
 }
 .direccion{
     width: 50%;
