@@ -28,10 +28,6 @@ header, footer{
     grid-area: header;
 }
 /*todo header*/
-.container-menu{
-    display: flex;
-    justify-content: space-between;
-}
 #logo{
     display: flex;
     width: 15%;
@@ -39,24 +35,12 @@ header, footer{
 .image{
     width: 100%;
 }
-#menu{
-    display: flex;
-    justify-content: end;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 75%;
-}
 
-#menu ul{
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-}
-#menu ul li{
+.menu ul li{
     font-size: 22px;
     padding: 15px;
 }
-#menu ul li a{
+.menu ul li a{
     color: #000000;
     border-radius: 25px;
     text-decoration: none;
@@ -65,14 +49,12 @@ header, footer{
     padding: 10px;
     padding-top: 8px;
 }
-#menu ul li a:hover{
+.menu ul li a:hover{
     background-color: rgb(201, 155, 5);
 }
 
 .image-header{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    
     background-image: url(../images/perroygato2.jpg);
     background-size: cover;
     background-position: center;
@@ -92,59 +74,15 @@ header, footer{
     
 }
 /*todo contenido de main*/
-.section-container{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    align-items: center;
-}
 
-.imagen-costado{  
-    width: 45%; 
-    margin: 15px;
-}
-.texto-costado{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    flex-direction: column;
-    width: 43%;
-    text-align:center;
-    padding: 10px;
-}
 .imagen{
     width: 100%;
     border: 1px solid black;
 }
-
-
 .titulos{
-    text-align: center;
     font-size: 40px;
     margin-top: 5px;
 }
-.container-vete{
-    display: flex;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.texto-centro{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-}
-.container-medicos{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-}
-
 .imagen-vete{
     width: 200px;
     height: 150px;
@@ -153,33 +91,12 @@ header, footer{
     width: 100%;
     height: 100%;
 }
-.section-productos{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.productos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-}
+
 .imagen-productos{
     width: 300px;
     height: 400px;
     transition: all 1s;
 }
-
-/*.formulario{
-    display: flex;
-    width: 45%;
-    margin-left: 10px;
-}
-.section-mapa{
-    display: flex;
-    width: 45%;
-    margin-right: 10px;
-}*/
 .mapa{
     width: 100%;
 }
@@ -283,26 +200,11 @@ header, footer{
 /*le asigno a footer su area en grid*/
 .container-footer{
     grid-area: footer;
-    display: flex;
 }
 /*todo el contenido de footer*/
-.container-redes {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 50%;
-}
-.texto-redes {
-   
-   text-align: center;
-}
+
 .redes{
     width: 10%;
-}
-.images-redes{
-    width: 100%;
-    display: flex;
-    justify-content: center;
 }
 .images {
     width: 100%;
@@ -310,12 +212,7 @@ header, footer{
 .images:hover{
     transform: scale(1.1);
 }
-.direccion{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 /*fin de footer*/
 
 /* inicio media 600px a 1023px*/
@@ -324,13 +221,7 @@ header, footer{
         height: 150px;
         width: 150px;
     }
-    #menu{ 
-        width: 75%;
-    }
-    #menu ul li{
-        font-size: 20px;
-       
-    }
+
     /*fin de header*/ 
     /*todo contenido de main*/
     
@@ -338,122 +229,37 @@ header, footer{
         font-size: 30px;
     }
     
-    .imagen-costado{
-        display: flex;
-        align-items: center;
-    }
-    .productos{
-        width: 45%;
-    }
+    
     /*todo el contenido de footer*/
     .redes{
-        width: 12%;
+        width: 13%;
     }
 }
 /* fin media 600px a 1023px */
 
 /* inicio media menos 599px */
 @media all and (max-width: 599px){
-    .container{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
+    
     #logo{
-        display: flex;
-        justify-content: center;
         width: 35%;
     }
     
-    #menu{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        
-    }
-    #menu ul li{
-        font-size: 19px;
-    }
-
     /*fin de header*/ 
 
     /*todo contenido de main*/
-    .section-container{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-    
-    .imagen-costado{    
-        width: 93%;
-    }
-    .texto-costado{
-        width: 93%;
-    }
-    
     
     .titulos{
         font-size: 30px;
     }
-    .container-vete{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-    .imagen-vete{
-        width: 170px;
-        height: 120px;
-    }
-    .section-productos{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .imagen-productos{
-        width: 250px;
-        height: 300px;
-    }
-    .formulario{
-        width: 95%;
-       
-    }
-    .section-mapa{
-        width: 95%;
-        
-    }
+    
     /*todo el contenido de footer*/
-    .container-footer{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    .texto-redes {
-       
-       text-align: center;
-    }
+    
     .redes{
-        width: 45px;
+        width: 13%;
     }
-    .images-redes{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
+    
     .images {
         width: 100%;
     }
-    .direccion{
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
+    
 }
