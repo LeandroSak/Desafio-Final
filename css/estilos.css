@@ -5,9 +5,7 @@ body{
     margin: 0px;
 }
 header, footer{
-    background-color: rgb(67, 148, 60);
-    
-    
+    background-color: rgb(67, 148, 60);  
 }
 /*generio grid*/
 .grid-container{
@@ -51,6 +49,7 @@ header, footer{
 }
 .menu ul li a:hover{
     background-color: rgb(201, 155, 5);
+    color: #000000;
 }
 
 .image-header{
