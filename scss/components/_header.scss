@@ -8,7 +8,7 @@
         .divi{
             #logo{
                 display: flex;
-                width: 15%;
+                width: 20%;
                 @media all and (min-width: 600px) and (max-width: 1023px){
                     height: nth($sizes , 4 );
                     width: nth($sizes , 4 ); 
@@ -24,28 +24,11 @@
                         padding: 15px;
                         a {
                             color: $color-negro;
-                            border-radius: 25px;
-                            text-decoration: none;
-                            text-align: center;
-                            background-color: #fbdc5d;
-                            padding: 10px;
-                            padding-top: 8px;
                             &:hover {
-                                background-color: rgb(201, 155, 5);
                                 color: $color-negro;
+                                transform: scale(1.1);
                             }
                         }
-                    }
-                }
-            }
-            .image-header {
-                background-image: url(../images/perroygato2.jpg);
-                background-size: cover;
-                background-position: center;
-                img {
-                    transition: opacity 1.5s ease-in-out;
-                    &:hover {
-                        opacity: 0;
                     }
                 }
             }

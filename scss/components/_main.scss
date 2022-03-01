@@ -1,9 +1,13 @@
 @import '../base/variables';
 
 /* Contenido de Main */
+.grid-contenido{
+  background-color: #fcf4daf1;
+}
 .imagen{
     width: $ancho;
     border: 1px solid $color-negro;
+    border-radius: 2%;
 }
 .titulos{
     font-size: nth($sizes , 1 );
@@ -15,10 +19,13 @@
 .imagen-vete{
     width: nth($sizes , 5 );
     height: nth($sizes , 4 );
+    border: 1px solid black;
+    border-radius: 5%;
 }
 .imagenes{
     width: $ancho;
     height: $alto;
+    border-radius: 5%;
 }
 
 .imagen-productos{
