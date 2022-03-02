@@ -1,13 +1,14 @@
 @import '../base/variables';
+@import '../base/mixins';
 
 /* Footer */
 .container-footer{
 	background-color: $bg-color;
 }
 .redes {
-	width: 10%;
+	@include ancho(10%);
     @media all and (max-width: 1023px){
-        width: 13%;
+        @include ancho(13%);
     }
 
 }

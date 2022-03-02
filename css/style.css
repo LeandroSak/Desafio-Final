@@ -25,6 +25,11 @@ body {
   grid-area: footer;
 }
 
+.mapa, .imagenes, .imagen, .image {
+  width: 100%;
+}
+
+/* es lo unico que encontre que se repite como para usar el extend*/
 /* Header */
 .grid-header {
   background-color: #fbdc5d;
@@ -35,8 +40,7 @@ body {
 }
 @media all and (min-width: 600px) and (max-width: 1023px) {
   .grid-header .navb .divi #logo {
-    height: 150px;
-    width: 150px;
+    width: 30%;
   }
 }
 @media all and (max-width: 599px) {
@@ -56,18 +60,18 @@ body {
   transform: scale(1.1);
 }
 
-.image {
+/* Fin Header */
+.mapa, .imagenes, .imagen, .image {
   width: 100%;
 }
 
-/* Fin Header */
+/* es lo unico que encontre que se repite como para usar el extend*/
 /* Contenido de Main */
 .grid-contenido {
   background-color: #fcf4daf1;
 }
 
 .imagen {
-  width: 100%;
   border: 1px solid black;
   border-radius: 2%;
 }
@@ -90,7 +94,6 @@ body {
 }
 
 .imagenes {
-  width: 100%;
   height: 100%;
   border-radius: 5%;
 }
@@ -99,10 +102,6 @@ body {
   width: 300px;
   height: 400px;
   transition: all 1s;
-}
-
-.mapa {
-  width: 100%;
 }
 
 /*animaciones*/

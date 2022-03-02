@@ -1,13 +1,16 @@
 @import '../base/variables';
+@import '../base/lista';
+@import '../base/maps';
+@import '../base/extends';
 
 /* Contenido de Main */
 .grid-contenido{
-  background-color: #fcf4daf1;
+  background-color: map-get($map: $mapa1, $key: bg-main);
 }
 .imagen{
-    width: $ancho;
-    border: 1px solid $color-negro;
-    border-radius: 2%;
+    @extend %ancho;
+    border: map-get($map: $mapa1, $key: borde);
+    border-radius: map-get($map: $mapa1, $key: radio2);
 }
 .titulos{
     font-size: nth($sizes , 1 );
@@ -19,13 +22,13 @@
 .imagen-vete{
     width: nth($sizes , 5 );
     height: nth($sizes , 4 );
-    border: 1px solid black;
-    border-radius: 5%;
+    border: map-get($map: $mapa1, $key: borde);
+    border-radius: map-get($map: $mapa1, $key: radio);
 }
 .imagenes{
-    width: $ancho;
+    @extend %ancho;
     height: $alto;
-    border-radius: 5%;
+    border-radius:map-get($map: $mapa1, $key: radio);
 }
 
 .imagen-productos{
@@ -34,7 +37,7 @@
     transition: all 1s;
 }
 .mapa{
-    width: $ancho;
+    @extend %ancho;
 }
 /*animaciones*/
 .animacion1{

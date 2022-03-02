@@ -1,5 +1,7 @@
 @import '../base/variables';
 @import '../base/lista';
+@import '../base/extends';
+@import '../base/mixins';
 
 /* Header */
 .grid-header{
@@ -8,13 +10,12 @@
         .divi{
             #logo{
                 display: flex;
-                width: 20%;
+                @include ancho(20%);
                 @media all and (min-width: 600px) and (max-width: 1023px){
-                    height: nth($sizes , 4 );
-                    width: nth($sizes , 4 ); 
+                    @include ancho(30%);
                 }
                 @media all and (max-width: 599px){
-                    width: 35%;
+                    @include ancho(35%);
                 }
             }
             .menu {
@@ -37,6 +38,6 @@
     }
 }
 .image{
-    width: $ancho;
+    @extend %ancho;
 }
 /* Fin Header */
