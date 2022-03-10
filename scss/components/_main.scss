@@ -30,7 +30,6 @@
     height: $alto;
     border-radius:map-get($map: $mapa1, $key: radio);
 }
-
 .imagen-productos{
     width: nth($sizes , 6);
     height: nth($sizes , 7);
@@ -43,7 +42,6 @@
 .animacion1{
     animation: anim1 1s linear 0s 1 normal forwards;
 }
-
 @keyframes anim1 {
     0% {
       transform: scaleY(0.4);
