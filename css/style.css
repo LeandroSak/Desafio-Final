@@ -86,6 +86,41 @@ body {
   }
 }
 
+.tarjetas {
+  width: 30%;
+  height: 100px;
+  padding: 5px;
+}
+@media all and (max-width: 780px) {
+  .tarjetas {
+    height: 80px;
+  }
+}
+
+.tituloMarcas {
+  font-size: 30px;
+}
+@media all and (max-width: 1023px) {
+  .tituloMarcas {
+    font-size: 20px;
+  }
+}
+
+.contenedorMarcas {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.marcas {
+  width: 25%;
+  height: 80px;
+}
+@media all and (max-width: 780px) {
+  .marcas {
+    height: 60px;
+  }
+}
+
 .imagen-vete {
   width: 200px;
   height: 150px;

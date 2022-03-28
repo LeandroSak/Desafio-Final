@@ -2,6 +2,7 @@
 @import '../base/lista';
 @import '../base/maps';
 @import '../base/extends';
+@import '../base/mixins';
 
 /* Contenido de Main */
 .grid-contenido{
@@ -19,6 +20,32 @@
         font-size: nth($sizes , 2 );
     }
 }
+.tarjetas{
+  @include ancho(30%);
+  height: 100px;
+  padding: 5px;
+  @media all and (max-width: 780px){
+      height: 80px;
+  }
+}
+.tituloMarcas{
+  font-size: nth($sizes , 2 );
+  @media all and (max-width: 1023px){
+    font-size: nth($sizes , 3 );
+}
+}
+.contenedorMarcas{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.marcas{
+  @include ancho(25%);
+  height: 80px; 
+  @media all and (max-width: 780px){
+    height: 60px;
+} 
+}
+
 .imagen-vete{
     width: nth($sizes , 5 );
     height: nth($sizes , 4 );
